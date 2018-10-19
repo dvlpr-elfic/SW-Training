@@ -1,4 +1,7 @@
 
+/**
+ * @author : Jihoon Jang
+ */
 
 #include <stdio.h>
 #include <string.h>

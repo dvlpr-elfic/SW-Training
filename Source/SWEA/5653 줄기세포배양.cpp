@@ -1,4 +1,8 @@
 
+/**
+ * @author : Jihoon Jang
+ */
+
 #include <iostream>
 #include <queue>
 #include <string.h>

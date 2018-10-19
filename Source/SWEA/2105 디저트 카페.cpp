@@ -1,4 +1,7 @@
 
+/**
+ * @author : Jihoon Jang
+ */
 #include <iostream>
 #include <stdio.h>
 #include <algorithm>
