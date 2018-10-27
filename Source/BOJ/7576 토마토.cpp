@@ -1,4 +1,8 @@
 
+/**
+ * @author : Jihoon Jang
+ */
+
 #include <iostream>
 #include <queue>
 #define MAP_SIZE 1001
