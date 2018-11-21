@@ -98,30 +98,12 @@ void crash(vector<crashtype> &crashlist, vector<atomtype> &atom)
 	}
 }
 
-void _move(vector<atomtype> &atom)
-{
-	for(int i=0; i<atom.size(); i++){
-		int x = atom[i].x, y = atom[i].y, d = atom[i].d;
-		int nx = x + dx[d];
-		int ny = y + dy[d];
-		if(isWall(nx, ny)){
-			killAtom(atom, i);
-			i--;
-			map[y][x]--;
-			continue;
-		}
-		map[ny][nx]++, map[y][x]--;
-		atom[i].x = nx, atom[i].y = ny;
-	}
-}
-
 void solve(vector<atomtype> &atom)
 {
 	while(!atom.empty()){
 		vector<crashtype> crashlist;
 		goHalfStep(atom, crashlist);
 		crash(crashlist, atom);
-		//_move(atom);
 		crashlist.clear();
 		goHalfStep(atom, crashlist);
 		crash(crashlist, atom);
