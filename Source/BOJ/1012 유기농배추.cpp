@@ -1,6 +1,7 @@
 
 /**
   * @author Jihoon Jang
+  * 25 min
   */
 
 #include <iostream>
