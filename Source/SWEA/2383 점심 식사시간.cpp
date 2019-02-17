@@ -31,7 +31,8 @@ typedef struct qnode
 	qnode(int n, int p):num(n), pos(p){}
 }qnode;
 
-void input(int &n, vector<pnode> &person, vector<snode> &stair, int &cnt){
+void input(int &n, vector<pnode> &person, vector<snode> &stair, int &cnt)
+{
 	cin >> n;
 	cnt = 0;
 	for(int y=0; y<n; y++){
@@ -51,14 +52,16 @@ void input(int &n, vector<pnode> &person, vector<snode> &stair, int &cnt){
 	cnt = person.size();
 }
 
-void setDistance(vector<pnode> &person, vector<snode> &stair, vector<int> &target, vector<int> &dist){
+void setDistance(vector<pnode> &person, vector<snode> &stair, vector<int> &target, vector<int> &dist)
+{
 	int len = person.size();
 	for(int i=0; i<len; i++){
 		dist.push_back(abs(person[i].x - stair[target[i]].x) + abs(person[i].y - stair[target[i]].y));
 	}
 }
 
-void _move(vector<snode> &stair, vector<int> &target, vector<int> &dist, int time, int &cnt, queue<qnode> *q){
+void _move(vector<snode> &stair, vector<int> &target, vector<int> &dist, int time, int &cnt, queue<qnode> *q)
+{
 	for(int i=0; i<2; i++){
 		int len = q[i].size();
 		for(int j=0; j<len; j++){
