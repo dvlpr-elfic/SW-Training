@@ -63,7 +63,6 @@ void memory_set(void *ptr, char val, int size)
 	}
 }
 
-
 void input(int &n, int &m, int &v)
 {
 	cin >> n >> m >> v;
