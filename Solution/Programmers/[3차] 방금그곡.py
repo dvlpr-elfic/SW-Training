@@ -55,7 +55,7 @@ def solution(target, musicinfos):
         if isPattern(src, dst):
             hits.append(Music(time, name, id))
             id += 1
-    if len(hits) == 0:
+    if not hits:
         return "(None)"
     hits.sort(key=lambda x: (-x.time, x.id))
     return hits[0].name
