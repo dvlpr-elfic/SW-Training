@@ -12,7 +12,7 @@
 
 ### 자료구조의 Empty 판단  
 
-str, list, set, tuple, dict 등 자료구조의 Empty 판단은 bool()사용하거나 조건문에 해당 객체를 바로 써주면 됩니다  
+str, list, set, tuple, dict 등 자료구조의 Empty 판단은 bool() 메소드를 사용하거나 조건문에 해당 객체를 바로 써주면 됩니다  
 
 ``` python
 if items:
