@@ -43,7 +43,7 @@ def solution(names):
     for name in names:
         files.append(File(name, id))
         id += 1
-    files.sort(key=lambda x : (x.head, x.n))
+    files.sort(key=lambda x : (x.head, x.n, x.id))
     for file in files:  answer.append(file.name)
     return answer
 
