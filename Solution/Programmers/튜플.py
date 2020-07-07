@@ -1,4 +1,11 @@
 
+def parse(string):
+    ret = string.lstrip('{').rstrip('}').split('},{')
+    for i in range(len(ret)):
+        ret[i] = ret[i].split(',')
+    return ret
+
+
 def pushMap(list, dict):
     n = len(list)
     for item in list:
@@ -6,34 +13,13 @@ def pushMap(list, dict):
             dict[item] = min(dict[item], n)
         else:
             dict[item] = n
-
-class Node:
-    def __init__(self, key = "", value = 0):
-        self.key = key
-        self.value = value
-
             
-def solution(sets):
-    answer = []
+            
+def solution(s):
     map = {}
-    number = ""
-    for i in range(1, len(sets) - 1):
-        if sets[i] == '{':
-            temp = []
-            continue
-        elif sets[i] == '}':
-            temp.append(number)
-            pushMap(temp, map)
-            number = ""
-        elif sets[i] == ',':
-            if not number:
-                continue
-            temp.append(number)
-            number = ""
-        else:       # 숫자
-            number += sets[i]
-    list = [Node(key, value) for key, value in map.items()]
-    list.sort(key = lambda x : x.value)
-    answer = [int(node.key) for node in list]
+    lists = parse(s)
+    for list in lists:
+        pushMap(list, map)
+    items = sorted(map.items(), key = lambda x : x[1])
+    answer = [int(item[0]) for item in items]
     return answer
-
