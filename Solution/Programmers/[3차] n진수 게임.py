@@ -5,9 +5,9 @@ TO_HEX = '0123456789ABCDEF'
 def converting(input, n):
     if input == 0:
         return ''
-    share, rest = divmod(input, n)
-    value = TO_HEX[rest]
-    return converting(share, n) + value
+    q, r = divmod(input, n)
+    value = TO_HEX[r]
+    return converting(q, n) + value
 
 def converter(dec, n):
     if dec == 0:
