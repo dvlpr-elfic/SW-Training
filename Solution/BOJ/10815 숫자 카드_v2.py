@@ -10,21 +10,16 @@ def get_input():
 
 def search(target, cards):
     if cards.get(target) is None:
-        return False
+        return 0
     else:
-        return True
+        return 1
 
 
 def run():
     # input
     n, m, cards, finds = get_input()
-    results = []
     # solve
-    for target in finds:
-        if search(target, cards):
-            results.append(1)
-        else:
-            results.append(0)
+    results = [search(target, cards) for target in finds]
     # print
     for result in results:
         print("{} ".format(result), end='')
@@ -32,4 +27,4 @@ def run():
 
 run()
 
-  
+ 
