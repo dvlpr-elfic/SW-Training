@@ -36,3 +36,30 @@ bool()을 사용하는 방법은 숫자형 데이터도 사용 가능합니다
 if item is None:
     print("item is None")
 ```  
+
+## Java  
+
+### HashMap Iterate  
+
+java.util.HashMap의 모든 요소를 방문할 때는 Set을 사용하면 쉽게 할 수 있습니다  
+
+``` java
+for (String key : hashMap.keySet()) {
+    System.out.println("key : " + key + ", value : " + hashMap.get(key));
+}
+```  
+
+HashMap.keySet()을 이용하여 key의 집합(set)을 구하고 value는 다시 HashMap에서 찾는 방법으로 접근할 수 있습니다  
+
+value 접근 방법에서 효율성 문제가 있을 수 있지만 key값의 길이가 길지 않다면 HashMap의 탐색 성능은 O(1)이므로 큰 문제는 없습니다  
+
+``` java
+for (Map.Entry<String, Integer> entry : hashMap.entrySet()) {
+    System.out.println("key : " + entry.getKey() + ", value : " + entry.getValue());
+}
+```  
+
+비슷한 방법이지만 key의 집합만 구하는 것이 아니라 key, value를 한 쌍으로 가지는 entry의 집합을 구해서 HashMap의 모든 요소를 방문하는 예제입니다  
+
+본인이 가장 많이 쓰는 방법입니다  
+
