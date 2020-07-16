@@ -63,3 +63,9 @@ for (Map.Entry<String, Integer> entry : hashMap.entrySet()) {
 
 본인이 가장 많이 쓰는 방법입니다  
 
+## Tech-Interview  
+
+https://github.com/JaeYeopHan/Interview_Question_for_Beginner
+
+https://github.com/gyoogle/tech-interview-for-developer
+
