@@ -1,7 +1,8 @@
 # SW-Training  
 
+자료구조, 알고리즘, WEB, 네트워크 등 SW 기초를 트레이닝 합니다  
 
-## Site  
+## Problem Solving Site  
 <a href='https://boj.kr'>Baekjoon Online Judge</a><br>
 <a href='https://www.swexpertacademy.com'>Samsung SWEA</a><br>
 <a href='https://algospot.com'>ALGOSPOT</a><br>
