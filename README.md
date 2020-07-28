@@ -1,6 +1,6 @@
 # SW-Training  
 
-자료구조, 알고리즘, WEB, 네트워크 등 SW 기초를 트레이닝 합니다  
+언어, 자료구조, 알고리즘, WEB, 네트워크 등 SW 기초를 트레이닝 합니다  
 
 ## Problem Solving Site  
 <a href='https://boj.kr'>Baekjoon Online Judge</a><br>
@@ -63,6 +63,8 @@ for (Map.Entry<String, Integer> entry : hashMap.entrySet()) {
 비슷한 방법이지만 key의 집합만 구하는 것이 아니라 key, value를 한 쌍으로 가지는 entry의 집합을 구해서 HashMap의 모든 요소를 방문하는 예제입니다  
 
 본인이 가장 많이 쓰는 방법입니다  
+
+
 
 ## Tech-Interview  
 
