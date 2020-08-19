@@ -11,6 +11,8 @@
 
 ## Problem List  
 
+[code.plus](https://code.plus)의 강의에 제시되는 문제들 중 일부입니다  
+
 ### 수학  
 
 ### 브루트포스  
