@@ -9,6 +9,18 @@
 <a href='https://leetcode.com/'>LeetCode</a><br>
 <a href='https://programmers.co.kr/'>Programmers</a><br>
 
+## Problem List  
+
+### 수학  
+
+### 브루트포스  
+
+### 브루트포스 (N과 M연습)  
+
+### 그래프와 BFS  
+
+### 다이나믹 프로그래밍  
+
 ## Python  
 
 ### 자료구조의 Empty 판단  
