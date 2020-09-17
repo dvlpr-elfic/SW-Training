@@ -28,6 +28,17 @@ sys.setrecursionlimit(10**6)
 ```
 
 파이썬의 재귀 제한을 늘리는 코드입니다  
+파이썬의 recursionlimit의 default값은 1000입니다  
+
+``` shell
+$python
+>>> import sys
+>>> sys.getrecursionlimit()
+1000
+>>> 
+```
+
+
 
 ### Python | 자료구조의 Empty 판단  
 
