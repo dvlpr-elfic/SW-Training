@@ -16,10 +16,20 @@
 - [code.plus 문제1](https://code.plus/course/34)
 - [code.plus 문제2](https://code.plus/course/40)
 
+## Memo  
 
-## Python  
+### Python | Handling recursion limit  
 
-### 자료구조의 Empty 판단  
+- [참조](https://www.geeksforgeeks.org/python-handling-recursion-limit/)
+
+``` python
+import sys
+sys.setrecursionlimit(10**6)
+```
+
+파이썬의 재귀 제한을 늘리는 코드입니다  
+
+### Python | 자료구조의 Empty 판단  
 
 str, list, set, tuple, dict 등 자료구조의 Empty 판단은 bool() 메소드를 사용하거나 조건문에 해당 객체를 바로 써주면 됩니다  
 
@@ -46,9 +56,7 @@ if item is None:
     print("item is None")
 ```  
 
-## Java  
-
-### HashMap Iterate  
+### Java | HashMap Iterate  
 
 java.util.HashMap의 모든 요소를 방문할 때는 Set을 사용하면 쉽게 할 수 있습니다  
 
@@ -69,9 +77,6 @@ for (Map.Entry<String, Integer> entry : hashMap.entrySet()) {
 ```  
 
 비슷한 방법이지만 key의 집합만 구하는 것이 아니라 key, value를 한 쌍으로 가지는 entry의 집합을 구해서 HashMap의 모든 요소를 방문하는 예제입니다  
-
-본인이 가장 많이 쓰는 방법입니다  
-
 
 
 ## Tech-Interview  
