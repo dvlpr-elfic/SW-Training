@@ -1,4 +1,4 @@
-# SW-Training  
+# SW-Practice  
 
 언어, 자료구조, 알고리즘, WEB, 네트워크 등 SW 기초를 트레이닝 합니다  
 
