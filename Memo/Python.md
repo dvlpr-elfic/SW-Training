@@ -1,6 +1,6 @@
 ## Handling recursion limit  
 
-- [참조](https://www.geeksforgeeks.org/python-handling-recursion-limit/)
+- [Reference]](https://www.geeksforgeeks.org/python-handling-recursion-limit/)
 
 ``` python
 import sys
