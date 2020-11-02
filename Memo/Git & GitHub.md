@@ -97,3 +97,32 @@ $병합할_브랜치의_수정사항
 이때 `<<<<<<<`, `>>>>>>>`과 `=======`이 표시된 부분을 지우고 원하는 수정사항만 남기고 저장합니다
 
 이후 파일을 스테이징하고 커밋하면 conflict가 발생하지 않습니다
+
+## ssh
+
+Secure Shell
+
+ssh 키를 생성해서 깃허브에 접속할 수 있습니다
+
+ssh 키를 이용해 작업하면 로그인을 할 필요가 없습니다
+
+ssh 키 생성하기
+```bash
+ssh-keygen
+```
+
+github에 생성한 ssh key를 등록하고 나면 해당 PC에서는 후에 로그인을 하지 않아도 되고 clone할 때 https가 아니라 ssh로 clone합니다
+
+## fetch
+
+pull은 fetch와 merge를 한번에 하는 것과 같습니다 pull과 달리 원격 브랜치에 어떤 변화가 있는지 정보만 가져옵니다
+
+fetch를 하면 FETCH_HEAD 브랜치가 생기고 그 브랜치를 master에 merge하면 pull과 같은 명령이 됩니다
+
+## Collaborators
+
+하나의 저장소를 여러 명이 관리할 때 Collaborators 추가를 해야합니다
+
+github 저장소 페이지에서 Settings -> Manage access -> Invite a collaborator를 선택해서 추가할 수 있습니다
+
+초대된 공동작업자는 메일과 깃허브 메세지를 받습니다 초대를 수락하면 이후 프로젝트에 commit할 수 있게 됩니다
