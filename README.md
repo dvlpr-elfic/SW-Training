@@ -1,6 +1,6 @@
-# SW-Practice  
+# study  
 
-언어, 자료구조, 알고리즘, WEB, 네트워크 등 SW 기초를 연습합니다  
+학습하고 연습하는 저장소입니다  
 
 ## Problem Solving Site  
 <a href='https://boj.kr'>Baekjoon Online Judge</a><br>
